@@ -19,6 +19,7 @@ project:
     groupId: org.jreleaser.examples
     artifactId: helloworld
     mainClass: org.jreleaser.examples.HelloWorld
+    mainModule: org.jreleaser.examples
 
 release:
   github:

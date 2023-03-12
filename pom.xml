@@ -67,7 +67,7 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
-        <version>3.10.1</version>
+        <version>3.11.0</version>
       </plugin>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
@@ -92,9 +92,16 @@
           <plugin>
             <groupId>org.jreleaser</groupId>
             <artifactId>jdks-maven-plugin</artifactId>
-            <version>1.4.0</version>
+            <version>1.5.1</version>
             <configuration>
               <pkgs>
+                <pkg>
+                  <name>zulu17LinuxMuslIntel</name>
+                  <platform>linux-x86_64</platform>
+                  <version>${jdk.version}</version>
+                  <libcType>musl</libcType>
+                  <archiveType>tar.gz</archiveType>
+                </pkg>
                 <pkg>
                   <name>zulu17LinuxIntel</name>
                   <platform>linux-x86_64</platform>
