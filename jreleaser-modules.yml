@@ -4,6 +4,7 @@ environment:
     jdkFilePrefix: 'zulu17.32.13-ca-jdk17.0.2'
 
 project:
+  version: 1.0.0-SNAPSHOT
   name: helloworld
   description: HelloWorld in Java
   longDescription: HelloWorld in Java
